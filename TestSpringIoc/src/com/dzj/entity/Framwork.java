@@ -8,8 +8,8 @@ public class Framwork implements Serializable {
 
 	private Bottom bottom;
 
-	public Framwork(int size) {
-		this.bottom = new Bottom(size);
+	public Framwork(Bottom bottom) {
+		this.bottom = bottom;
 	}
 
 	public Bottom getBottom() {
@@ -19,5 +19,5 @@ public class Framwork implements Serializable {
 	public void setBottom(Bottom bottom) {
 		this.bottom = bottom;
 	}
-
+    
 }

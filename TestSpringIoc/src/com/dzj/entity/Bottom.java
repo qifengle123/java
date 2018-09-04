@@ -7,8 +7,8 @@ public class Bottom implements Serializable {
 	private static final long serialVersionUID = 5246935796041757732L;
 	private Tire tire;
     
-	Bottom(int size) {
-		this.tire = new Tire(size);
+	Bottom(Tire tire) {
+		this.tire = tire;
 	}
 
 	public Tire getTire() {
@@ -18,5 +18,5 @@ public class Bottom implements Serializable {
 	public void setTire(Tire tire) {
 		this.tire = tire;
 	}
-	
+    
 }

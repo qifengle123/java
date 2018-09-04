@@ -8,10 +8,21 @@ public class Car implements Serializable{
 	
 	private Framwork framwork;
 	
-	Car(int size){
-		this.framwork  = new Framwork(size);
+	Car(Framwork framwork){
+		this.framwork  = framwork;
 	}
-    public void run(){
-    	System.out.println("小车的大小:"+framwork.getBottom().getTire().getSize()+"米"+" "+"小车跑起来啦");
+	
+    public Framwork getFramwork() {
+		return framwork;
+	}
+
+
+	public void setFramwork(Framwork framwork) {
+		this.framwork = framwork;
+	}
+
+
+	public void run(){
+    	System.out.println("小车的大小："+framwork.getBottom().getTire().getSize()+"===="+"小车在跑");
     }
 }
