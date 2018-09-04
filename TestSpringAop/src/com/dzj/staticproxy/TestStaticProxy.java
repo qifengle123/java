@@ -6,5 +6,6 @@ public class TestStaticProxy {
            UserDaoProxy userDaoProxy = new UserDaoProxy();
            //执行代理方法
            userDaoProxy.save();
+           userDaoProxy.find();
 	}
 }
