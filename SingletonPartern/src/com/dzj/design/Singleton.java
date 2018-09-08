@@ -1,5 +1,7 @@
 package com.dzj.design;
-
+/**
+ * 饿汉式单利：线程安全
+ * */
 public class Singleton {
 	 //限制产生多个对象
      private static final Singleton singleton = new Singleton();
