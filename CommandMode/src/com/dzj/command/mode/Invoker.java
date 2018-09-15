@@ -1,5 +1,5 @@
 package com.dzj.command.mode;
-//调用命令
+//调用命令 
 public class Invoker {
      //什么命令
 	 private Command command;

@@ -13,4 +13,9 @@ public abstract class Group {
 	   public abstract void change();
 	   //被要求给出所有的变更计划
 	   public abstract void plan();
+	   
+	   //优化命令模式
+	   public void rollBack(){
+		   //根据日志进行回滚
+	   }
 }
