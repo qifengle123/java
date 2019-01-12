@@ -12,8 +12,8 @@ public abstract class HummerModel {
     public abstract void alarm();
     //引擎会轰隆隆地响
     public abstract void engineBoom();
-    //模型需要会跑
-    public void run(){
+    //模型需要会跑 一般防止恶意操作，一般模版方法都加上final关键字，不允许被覆盖。
+    final public  void run(){
     	//先发动汽车
     	this.start();
     	//引擎开始轰鸣
